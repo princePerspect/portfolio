@@ -1,0 +1,121 @@
+.wrapper {
+    text-decoration: none;
+    display: block;
+
+    /* 🔒 HARD RESET for hover effects coming from <a> */
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+.wrapper:hover {
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+/* ---------- CARD ---------- */
+
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 48px rgba(0, 0, 0, 0.16);
+}
+
+/* ---------- IMAGE ---------- */
+
+.media {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* image zoom */
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card:hover .media img {
+    transform: scale(1.04);
+}
+
+/* ---------- BADGE ---------- */
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 0.50rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(80, 80, 80, 0.65);
+    padding: 0.25rem 0.50rem;
+    border-radius: 6px;
+    backdrop-filter: blur(6px);
+}
+
+/* ---------- BODY ---------- */
+
+.body {
+    padding: 1.2rem 1.2rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.title {
+    font-size: 1.05rem;
+    line-height: 1.35;
+    font-weight: 750;
+    color: #111;
+    margin: 0;
+}
+
+.excerpt {
+    font-size: 0.88rem;
+    line-height: 1.2;
+    color: #555;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.arrow {
+    padding: 0.45rem 1.4rem;
+    border-radius: 9px;
+    background: #111;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    line-height: 1;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card:hover .arrow {
+    transform: translateX(2px);
+}

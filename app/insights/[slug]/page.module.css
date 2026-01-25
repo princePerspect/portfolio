@@ -1,0 +1,98 @@
+/* ---------- HERO ---------- */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: #0a0a0a;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.carouselWrap {
+    padding: 0 1.5rem;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* vertical center */
+    justify-content: center;
+    /* horizontal center */
+    text-align: center;
+    /* text center */
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(2.2rem, 4.5vw, 3.3rem);
+    line-height: 1.15;
+    color: #ffffff;
+}
+
+
+/* ---------- ARTICLE ---------- */
+
+.article {
+    padding: 0rem 1.5rem 1.5rem 2rem;
+}
+
+.content {
+    max-width: 820px;
+    margin: 0 auto;
+    line-height: 1.85;
+    color: #000;
+}
+
+.content hr {
+    margin: 3em 0;
+    border: none;
+    border-top: 1px solid #464646;
+    /* or make them invisible: */
+    /* display: none; */
+}
+
+
+.content p {
+    color: #000;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+.content li {
+    color: #000;
+    opacity: 0.8;
+}
+
+.content h2 {
+    margin-top: 4rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.content h3 {
+    margin-top: 3rem;
+    margin-bottom: 1.4rem;
+    color: #000;
+}
+
+.content img {
+    width: 100%;
+    margin: 2rem 0rem 0rem 0rem;
+    padding-bottom: 0rem;
+}
+
+/* ---------- MORE ARTICLES ---------- */
+
+.more {
+    padding: 4rem 3.5rem 6rem;
+}

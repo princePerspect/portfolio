@@ -1,0 +1,74 @@
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+/* ---------- TRACK ---------- */
+
+.track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+}
+
+.track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Each child (Card wrapper) */
+.track>* {
+    flex: 0 0 calc(25% - 18px);
+    scroll-snap-align: start;
+}
+
+/* ---------- ARROWS ---------- */
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #111;
+    font-size: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    z-index: 5;
+    padding: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.45;
+}
+
+.arrow:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.left {
+    left: -22px;
+}
+
+.right {
+    right: -22px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1024px) {
+    .track>* {
+        flex: 0 0 calc(50% - 12px);
+    }
+}
+
+@media (max-width: 640px) {
+    .track>* {
+        flex: 0 0 85%;
+    }
+
+    .arrow {
+        display: none;
+    }
+}

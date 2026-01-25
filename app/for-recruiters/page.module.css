@@ -1,0 +1,127 @@
+.page {
+    min-height: 100vh;
+}
+
+.main {
+    padding-top: 0;
+}
+
+.container {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: 0 var(--spacing-3);
+}
+
+/* ---------- SECTIONS ---------- */
+
+.section {
+    padding: var(--spacing-6) 0;
+}
+
+
+.sectionTitle {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    margin-bottom: var(--spacing-6);
+}
+
+/* ---------- HOW I WORK ---------- */
+
+.workList {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-left: 1.2rem;
+    color: black;
+    padding: 25px;
+}
+
+.workList li {
+    margin-bottom: var(--spacing-3);
+    line-height: 1.5;
+    font-size: var(--font-size-lg);
+}
+
+.workList strong {
+    display: block;
+    font-weight: 800;
+    margin-top: 0.2rem;
+    font-size: var(--font-size-xl);
+}
+
+/* ---------- LISTS ---------- */
+
+.bulletList {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 1.2rem;
+    font-size: var(--font-size-lg);
+    line-height: 0.3rem;
+    color: black;
+}
+
+.bulletList li {
+    margin-bottom: var(--spacing-3);
+}
+
+/* ---------- PILLS ---------- */
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+    justify-content: center;
+}
+
+/* ---------- RECRUITER CTA ---------- */
+
+.recruiterCtas {
+    margin-top: var(--spacing-6);
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-3);
+    flex-wrap: wrap;
+}
+
+/* ---------- HERO → CONTENT BRIDGE ---------- */
+
+.heroBridge {
+    position: relative;
+    height: 0;
+}
+
+.bridgeLogo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -49%);
+    width: 80px;
+    /* adjust if needed */
+    height: auto;
+    z-index: 20;
+    pointer-events: none;
+}
+
+/* ---------- CONTENT → FOOTER BRIDGE ---------- */
+
+.footerBridge {
+    position: relative;
+    height: 0;
+}
+
+/* Flip vertically for footer connection */
+.bridgeFlipped {
+    transform: translate(-50%, -51%) rotate(180deg);
+}
+
+.footerBridge .bridgeLogo {
+    width: 56px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+    .section {
+        padding: var(--spacing-5) 0;
+    }
+}

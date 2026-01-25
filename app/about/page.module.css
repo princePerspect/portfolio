@@ -1,0 +1,191 @@
+.page {
+    min-height: 100vh;
+}
+
+.main {
+    padding-top: 0px;
+}
+
+.container {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: 0 var(--spacing-3);
+}
+
+/* ---------- SECTIONS ---------- */
+
+.section {
+    padding: var(--spacing-4) 0;
+}
+
+.sectionTitle {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+    /* margin-bottom: var(--spacing-4); */
+    text-align: center;
+}
+
+.sectionSub {
+    text-align: center;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-6);
+    font-size: var(--font-size-lg);
+    padding: 0px;
+}
+
+/* ---------- TEXT ---------- */
+
+.textBlock {
+    max-width: 950px;
+    margin: 0 auto;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    color: black;
+    padding: 20px;
+}
+
+.textBlock p {
+    margin-bottom: var(--spacing-3);
+    max-width: 950px;
+}
+
+.helperText {
+    text-align: center;
+    margin-top: var(--spacing-4);
+    color: var(--color-text-secondary);
+}
+
+/* ---------- TIMELINE ---------- */
+
+.timeline {
+    max-width: 700px;
+    margin: var(--spacing-6) auto;
+}
+
+.timeline li {
+    margin-bottom: 0.3rem;
+    color: var(--color-text-secondary);
+}
+
+/* ---------- GRIDS ---------- */
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-6);
+    padding-top: 25px;
+}
+
+.infoCard {
+    position: relative;
+    background: var(--color-hover);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-4);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.infoCard h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-2);
+}
+
+.infoCard p {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+}
+
+/* ---------- HOW I WORK ---------- */
+
+.workList {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-left: 1.2rem;
+    color: black;
+    padding: 25px;
+}
+
+.workList li {
+    margin-bottom: var(--spacing-3);
+    line-height: 1.5;
+    font-size: var(--font-size-lg);
+}
+
+.workList strong {
+    display: block;
+    font-weight: 800;
+    margin-top: 0.2rem;
+    font-size: var(--font-size-xl);
+}
+
+/* ---------- PILLS ---------- */
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+    justify-content: center;
+    padding-top: 25px;
+    font-size: var(--font-size-lg);
+}
+
+.cardIcon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 28px;
+    height: 28px;
+    opacity: 0.85;
+}
+
+
+/* ---------- CTA ---------- */
+
+.centerCta {
+    margin-top: var(--spacing-6);
+    text-align: center;
+}
+
+/* ---------- HERO → CONTENT BRIDGE ---------- */
+
+.heroBridge {
+    position: relative;
+    height: 0;
+}
+
+.bridgeLogo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -49%);
+    width: 80px;
+    /* adjust if needed */
+    height: auto;
+    z-index: 20;
+    pointer-events: none;
+}
+
+/* ---------- CONTENT → FOOTER BRIDGE ---------- */
+
+.footerBridge {
+    position: relative;
+    height: 0;
+}
+
+/* Flip vertically for footer connection */
+.bridgeFlipped {
+    transform: translate(-50%, -51%) rotate(180deg);
+}
+
+.footerBridge .bridgeLogo {
+    width: 56px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+    .section {
+        padding: var(--spacing-6) 0;
+    }
+}

@@ -1,0 +1,42 @@
+.page {
+    min-height: 100vh;
+}
+
+.main {
+    padding-top: 0px 0px 30px 0px;
+}
+
+/* ---------- HERO → CONTENT BRIDGE ---------- */
+
+.heroBridge {
+    position: relative;
+    height: 0;
+}
+
+.bridgeLogo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -49%);
+    width: 80px;
+    /* adjust if needed */
+    height: auto;
+    z-index: 20;
+    pointer-events: none;
+}
+
+/* ---------- CONTENT → FOOTER BRIDGE ---------- */
+
+.footerBridge {
+    position: relative;
+    height: 0;
+}
+
+/* Flip vertically for footer connection */
+.bridgeFlipped {
+    transform: translate(-50%, -51%) rotate(180deg);
+}
+
+.footerBridge .bridgeLogo {
+    width: 56px;
+}

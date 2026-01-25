@@ -1,0 +1,182 @@
+.page {
+    min-height: 100vh;
+}
+
+.main {
+    padding-top: 0;
+}
+
+/* ---------- CONTAINER ---------- */
+
+.container {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+}
+
+/* ---------- SECTION TITLES ---------- */
+
+.sectionTitle {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* ---------- HERO → CONTENT BRIDGE ---------- */
+
+.heroBridge {
+    position: relative;
+    height: 0;
+}
+
+.bridgeLogo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -49%);
+    width: 80px;
+    /* adjust if needed */
+    height: auto;
+    z-index: 20;
+    pointer-events: none;
+}
+
+/* ---------- CONTENT → FOOTER BRIDGE ---------- */
+
+.footerBridge {
+    position: relative;
+    height: 0;
+}
+
+/* Flip vertically for footer connection */
+.bridgeFlipped {
+    transform: translate(-50%, -51%) rotate(180deg);
+}
+
+.footerBridge .bridgeLogo {
+    width: 56px;
+}
+
+
+
+
+/* ---------- ENGINEERING CLARITY ---------- */
+
+.engineeringHero {
+    margin: var(--spacing-6) auto var(--spacing-8);
+    max-width: 250px;
+}
+
+.engineeringHero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.engineeringCard {
+    max-width: 1000px;
+    margin: 0 auto var(--spacing-12);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.engineeringCard img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- DARK SECTION ---------- */
+
+.darkSection {
+    background: var(--color-background);
+    padding: var(--spacing-16) 0;
+}
+
+/* ---------- ENDORSEMENTS ---------- */
+
+.endorsementCard {
+    background: var(--color-hover);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-6);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.quote {
+    font-size: var(--font-size-lg);
+    font-style: italic;
+    margin-bottom: var(--spacing-4);
+}
+
+.author {
+    font-weight: var(--font-weight-semibold);
+}
+
+.role {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-12);
+}
+
+/* ---------- SECTION HEADER ---------- */
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.sectionSubtitle {
+    font-size: 1.05rem;
+    color: #000000;
+    margin-top: 0.4rem;
+}
+
+.sectionBridge {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -32px;
+    margin-bottom: 1px;
+    z-index: 5;
+}
+
+
+/* ---------- CARD ROW (NO WRAP) ---------- */
+
+.cardsRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* responsive */
+@media (max-width: 1100px) {
+    .cardsRow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .cardsRow {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .engineeringHero {
+        max-width: 420px;
+    }
+}

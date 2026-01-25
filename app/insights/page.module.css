@@ -1,0 +1,93 @@
+.page {
+    min-height: 100vh;
+}
+
+.main {
+    padding-top: 0;
+}
+
+.container {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+/* ---------- SECTIONS ---------- */
+
+.section {
+    margin-bottom: var(--spacing-16);
+}
+
+.sectionTitle {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    margin-bottom: var(--spacing-8);
+}
+
+/* ---------- GRID ---------- */
+
+/* ✅ 4 cards per row on desktop */
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+    padding-bottom: var(--spacing-10);
+}
+
+/* ---------- HERO → CONTENT BRIDGE ---------- */
+
+.heroBridge {
+    position: relative;
+    height: 0;
+}
+
+.bridgeLogo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -49%);
+    width: 80px;
+    /* adjust if needed */
+    height: auto;
+    z-index: 20;
+    pointer-events: none;
+}
+
+/* ---------- CONTENT → FOOTER BRIDGE ---------- */
+
+.footerBridge {
+    position: relative;
+    height: 0;
+}
+
+/* Flip vertically for footer connection */
+.bridgeFlipped {
+    transform: translate(-50%, -51%) rotate(180deg);
+}
+
+.footerBridge .bridgeLogo {
+    width: 56px;
+}
+
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1200px) {
+    .cardsGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .cardsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .cardsGrid {
+        grid-template-columns: 1fr;
+    }
+}

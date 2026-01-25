@@ -1,0 +1,15 @@
+.surface {
+    background: #ffffff;
+    padding: 80px 0px 0px 0px;
+}
+
+/* Rounded edges ONLY at boundaries */
+.roundedTop {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.roundedBottom {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}

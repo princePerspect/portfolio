@@ -1,0 +1,202 @@
+.contactSection {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: var(--spacing-4);
+}
+
+/* ---------- INTRO ---------- */
+
+.intro {
+    text-align: center;
+    margin-bottom: var(--spacing-10);
+}
+
+.heading {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-3xl);
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.subtext {
+    color: #000;
+    font-size: 1.05rem;
+    margin-bottom: var(--spacing-5);
+}
+
+.topActions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+
+/* ---------- EMAIL BUTTON (unique) ---------- */
+
+.emailButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border-radius: 6px;
+    border: 1px solid #555555;
+    color: #555555;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.arrow {
+    margin-left: 4px;
+}
+
+/* ---------- SHARED PILL BUTTON (LinkedIn + Resume) ---------- */
+
+.pillButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 75px;
+    border-radius: 999px;
+    background: #555555;
+    color: #fff;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+/* ---------- ICON ---------- */
+
+.buttonIcon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+/* ---------- CARD ---------- */
+
+/* .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #0f0f0f;
+    border-radius: 20px;
+    padding: var(--spacing-8);
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-8);
+} */
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #0f0f0f;
+    border-radius: 20px;
+    /* gap: var(--spacing-6); */
+    margin-bottom: var(--spacing-8);
+    overflow: hidden;
+    /* IMPORTANT */
+}
+
+.formWrapper {
+    padding: var(--spacing-8);
+}
+
+
+/* ---------- FORM ---------- */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.formTitle {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-4);
+}
+
+.input,
+.textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 10px 0;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: white;
+}
+
+.sendButton {
+    margin-top: var(--spacing-4);
+    padding: 8px 25px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    align-self: flex-start;
+}
+
+/* ---------- IMAGE ---------- */
+
+.imageWrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.glow {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    filter: blur(80px);
+    top: 50%;
+    right: 80px;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+
+.image {
+    position: relative;
+    max-height: 420px;
+    object-fit: contain;
+    z-index: 1;
+}
+
+/* ---------- BOTTOM ---------- */
+
+.bottomAction {
+    text-align: center;
+    padding: 20px 0px 50px 0px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .formWrapper {
+        padding: var(--spacing-6);
+    }
+
+    .image {
+        max-height: 300px;
+    }
+}
