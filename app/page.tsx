@@ -16,7 +16,7 @@ import { getAllInsightsMeta } from '@/lib/insights';
 import {
   howIWorkItems,
   featuredWorkItems,
-  endorsements,
+  // endorsements,
 } from '@/content/data';
 
 import styles from './page.module.css';
