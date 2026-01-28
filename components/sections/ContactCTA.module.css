@@ -203,7 +203,7 @@
     }
 
     .contactSection {
-        padding: var(--spacing-2);
+        padding: 10px;
     }
 
     .formWrapper {

@@ -15,9 +15,9 @@ hero: "/images/articles/memo-004/consumer-internet-models-hero.png"
 
 ## Methodology Note
 
-This memo examines the structural conditions under which consumer internet business models in India are able to translate scale into **durable profitability**. The analysis follows a hypothesis-led, evidence-driven methodology, commonly used in management consulting and investment research.
+**This memo examines the structural conditions under which consumer internet business models in India are able to translate scale into **durable profitability**. The analysis follows a hypothesis-led, evidence-driven methodology, commonly used in management consulting and investment research.**
 
-Rather than evaluating individual companies, the memo identifies recurring economic patterns across categories. Four hypotheses are formulated to explain when consumer internet models succeed in India, drawing on consulting benchmarks, analyst commentary, platform disclosures, and academic research.
+**Rather than evaluating individual companies, the memo identifies recurring economic patterns across categories. Four hypotheses are formulated to explain when consumer internet models succeed in India, drawing on consulting benchmarks, analyst commentary, platform disclosures, and academic research.**
 
 ---
 

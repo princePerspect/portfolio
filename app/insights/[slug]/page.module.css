@@ -96,3 +96,9 @@
 .more {
     padding: 4rem 3.5rem 6rem;
 }
+
+@media (max-width: 640px) {
+    .more {
+        padding: 40px 10px;
+    }
+}
