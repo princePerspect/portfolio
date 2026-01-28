@@ -197,11 +197,24 @@
         padding: 5px 45px;
     }
 
+    .sendButton {
+        margin-top: 0px;
+        align-self: center;
+    }
+
+    .contactSection {
+        padding: var(--spacing-2);
+    }
+
     .formWrapper {
         padding: var(--spacing-3);
     }
 
     .image {
         max-height: 300px;
+    }
+
+    .glow {
+        display: none;
     }
 }
