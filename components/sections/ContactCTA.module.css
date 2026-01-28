@@ -190,10 +190,15 @@
 @media (max-width: 768px) {
     .card {
         grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .pillButton {
+        padding: 5px 45px;
     }
 
     .formWrapper {
-        padding: var(--spacing-6);
+        padding: var(--spacing-3);
     }
 
     .image {
