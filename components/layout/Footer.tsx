@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -35,6 +36,12 @@ export default function Footer() {
                         >
                             <img src="/icons/linkedin.png" alt="LinkedIn" />
                         </a>
+
+                        <span className={styles.separator}>|</span>
+
+                        <Link href="/write" aria-label="Write a reflection">
+                            <img src="/icons/write.svg" alt="Write a reflection" />
+                        </Link>
                     </div>
 
                     <p className={styles.copyright}>
