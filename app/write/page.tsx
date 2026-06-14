@@ -37,8 +37,7 @@ export default function WritePage() {
                     <div className={styles.container}>
                         <section className={styles.card} id="reflection-form">
                             <div className={styles.copy}>
-                                <span className={styles.eyebrow}>POSITIVE, CRITICAL, THOUGHTFUL, ANONYMOUS -
-                                    EVERYTHING IS WELCOME</span>
+                                <span className={styles.eyebrow}>POSITIVE, CRITICAL, THOUGHTFUL, ANONYMOUS - EVERYTHING IS WELCOME</span>
                                 <p>
                                     If we&apos;ve interacted, worked together, crossed
                                     paths briefly, or shared any part of a journey -

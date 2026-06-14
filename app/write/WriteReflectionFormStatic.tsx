@@ -5,7 +5,7 @@ export default function WriteReflectionFormStatic() {
         <form
             name="write-reflection"
             method="POST"
-            action="/write?success=true"
+            action="/write/success"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             className={styles.form}
