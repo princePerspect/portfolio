@@ -13,6 +13,17 @@ export default function WritePage() {
         <div className={styles.page}>
             <Navbar variant="transparent" />
 
+            <form
+                name="write-reflection"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                hidden>
+                <input type="text" name="message" />
+                <input type="text" name="name" />
+                <input type="text" name="role" />
+                <input type="text" name="organization" />
+            </form>
+
             <section className={styles.hero}>
                 <div className={styles.heroInner}>
                     <span className={styles.eyebrow}>PRIVATE REFLECTION</span>
