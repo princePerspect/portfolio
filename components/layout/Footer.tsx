@@ -10,12 +10,12 @@ export default function Footer() {
                 {/* LEFT */}
                 <div className={styles.left}>
                     <div className={styles.icons}>
-                        <a
-                            href="mailto:princeperspect@gmail.com"
+                        <Link
+                            href="/#contact"
                             aria-label="Email"
                         >
                             <img src="/icons/mail.png" alt="Email" />
-                        </a>
+                        </Link>
 
                         <span className={styles.separator}>|</span>
 

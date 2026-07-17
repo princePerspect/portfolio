@@ -107,6 +107,18 @@
     gap: var(--spacing-4);
 }
 
+.netlifyBlueprint,
+.honeypot {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
 .formTitle {
     color: white;
     font-size: 1.2rem;
@@ -144,6 +156,19 @@
     font-size: 0.75rem;
     border-radius: 6px;
     align-self: flex-start;
+}
+
+.successState {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.successText,
+.errorText {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 /* ---------- IMAGE ---------- */

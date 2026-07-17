@@ -5,7 +5,7 @@ import PageHero from '@/components/layout/PageHero';
 
 import Card from '@/components/ui/Card';
 
-import { getAllInsightsMeta } from '@/lib/insights';
+import { getAllInsightsMeta, type InsightMeta } from '@/lib/insights';
 
 import styles from './page.module.css';
 
@@ -76,7 +76,7 @@ function Section({
     items,
 }: {
     title: string;
-    items: any[];
+    items: InsightMeta[];
 }) {
     if (!items.length) return null;
 

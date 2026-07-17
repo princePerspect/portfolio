@@ -1,6 +1,58 @@
+"use client";
+
+import { FormEvent, useState } from "react";
+
 import styles from "./ContactCTA.module.css";
 
+const CONTACT_FORM_NAME = "contact";
+
+function encodeFormData(formData: FormData) {
+    const params = new URLSearchParams();
+
+    formData.forEach((value, key) => {
+        params.append(key, value.toString());
+    });
+
+    return params.toString();
+}
+
 export default function ContactSection() {
+    const [submissionState, setSubmissionState] = useState<
+        "idle" | "submitting" | "success" | "error"
+    >("idle");
+
+    async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+        event.preventDefault();
+
+        const form = event.currentTarget;
+
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        try {
+            setSubmissionState("submitting");
+
+            const response = await fetch("/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: encodeFormData(new FormData(form)),
+            });
+
+            if (!response.ok) {
+                throw new Error("Unable to submit contact form");
+            }
+
+            form.reset();
+            setSubmissionState("success");
+        } catch {
+            setSubmissionState("error");
+        }
+    }
+
     return (
         <section className={styles.contactSection} id="contact">
             {/* Top intro */}
@@ -15,7 +67,7 @@ export default function ContactSection() {
                 <div className={styles.topActions}>
                     {/* EMAIL BUTTON (unique class) */}
                     <a
-                        href="mailto:princeperspect@gmail.com"
+                        href="#contact"
                         className={styles.emailButton}
                     >
                         <img
@@ -48,40 +100,117 @@ export default function ContactSection() {
                 {/* Left: form */}
                 <div className={styles.formWrapper}>
                     <form
-                        className={styles.form}
-                        action="mailto:princeperspect@gmail.com"
-                        method="post"
-                        encType="text/plain"
+                        name={CONTACT_FORM_NAME}
+                        method="POST"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        className={styles.netlifyBlueprint}
+                        aria-hidden="true"
                     >
+                        <input
+                            type="hidden"
+                            name="form-name"
+                            value={CONTACT_FORM_NAME}
+                        />
+                        <input type="text" name="bot-field" />
+                        <input type="text" name="name" />
+                        <input type="email" name="email" />
+                        <textarea name="message" />
+                    </form>
+
+                    <form
+                        className={styles.form}
+                        name={CONTACT_FORM_NAME}
+                        method="POST"
+                        onSubmit={handleSubmit}
+                    >
+                        <input
+                            type="hidden"
+                            name="form-name"
+                            value={CONTACT_FORM_NAME}
+                        />
+                        <p className={styles.honeypot}>
+                            <label>
+                                Do not fill this field if you&apos;re human
+                                <input
+                                    name="bot-field"
+                                    type="text"
+                                    tabIndex={-1}
+                                    autoComplete="off"
+                                />
+                            </label>
+                        </p>
+
                         <h3 className={styles.formTitle}>SEND A MESSAGE</h3>
 
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Name"
-                            className={styles.input}
-                            required
-                        />
+                        {submissionState === "success" ? (
+                            <div
+                                className={styles.successState}
+                                aria-live="polite"
+                            >
+                                <p className={styles.successText}>
+                                    Thank you. Your message has been sent.
+                                </p>
+                                <button
+                                    type="button"
+                                    className={styles.sendButton}
+                                    onClick={() => setSubmissionState("idle")}
+                                >
+                                    SEND ANOTHER MESSAGE
+                                </button>
+                            </div>
+                        ) : (
+                            <>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Name"
+                                    className={styles.input}
+                                    required
+                                    autoComplete="name"
+                                    aria-label="Name"
+                                />
 
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Email"
-                            className={styles.input}
-                            required
-                        />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    className={styles.input}
+                                    required
+                                    autoComplete="email"
+                                    aria-label="Email"
+                                />
 
-                        <textarea
-                            name="message"
-                            placeholder="Message"
-                            rows={4}
-                            className={styles.textarea}
-                            required
-                        />
+                                <textarea
+                                    name="message"
+                                    placeholder="Message"
+                                    rows={4}
+                                    className={styles.textarea}
+                                    required
+                                    autoComplete="off"
+                                    aria-label="Message"
+                                />
 
-                        <button type="submit" className={styles.sendButton}>
-                            SEND MESSAGE
-                        </button>
+                                {submissionState === "error" ? (
+                                    <p
+                                        className={styles.errorText}
+                                        aria-live="polite"
+                                    >
+                                        Something went wrong. Please try again.
+                                    </p>
+                                ) : null}
+
+                                <button
+                                    type="submit"
+                                    className={styles.sendButton}
+                                    disabled={submissionState === "submitting"}
+                                >
+                                    {submissionState === "submitting"
+                                        ? "SENDING..."
+                                        : "SEND MESSAGE"}
+                                </button>
+                            </>
+                        )}
                     </form>
                 </div>
 
