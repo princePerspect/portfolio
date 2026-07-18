@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Surface from '@/components/layout/Surface';
@@ -8,6 +9,39 @@ import Card from '@/components/ui/Card';
 import { getAllInsightsMeta, type InsightMeta } from '@/lib/insights';
 
 import styles from './page.module.css';
+
+const pageTitle = 'Insights';
+const pageDescription =
+    "Read Prince Kumar's analytical memos, case work, and frameworks on markets, consumer internet, business models, and product strategy.";
+const previewImage = '/images/engineering-clarity/engineering-clarity-hero.png';
+
+export const metadata: Metadata = {
+    title: pageTitle,
+    description: pageDescription,
+    alternates: {
+        canonical: '/insights',
+    },
+    openGraph: {
+        title: `${pageTitle} | Prince Kumar`,
+        description: pageDescription,
+        url: '/insights',
+        siteName: 'Prince Kumar',
+        locale: 'en_US',
+        type: 'website',
+        images: [
+            {
+                url: previewImage,
+                alt: 'Analytical memos and case work by Prince Kumar',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: `${pageTitle} | Prince Kumar`,
+        description: pageDescription,
+        images: [previewImage],
+    },
+};
 
 export default function InsightsPage() {
     const insights = getAllInsightsMeta();

@@ -69,9 +69,6 @@ export const metadata: Metadata = {
     template: "%s | Prince Kumar",
   },
   description: siteDescription,
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: siteTitle,
     description: siteDescription,

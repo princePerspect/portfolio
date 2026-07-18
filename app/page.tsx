@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Navbar from '@/components/layout/Navbar';
 import Hero from '@/components/layout/Hero';
 import Footer from '@/components/layout/Footer';
@@ -20,6 +21,43 @@ import {
 } from '@/content/data';
 
 import styles from './page.module.css';
+
+const siteTitle = 'Prince Kumar | Strategy, Product & Engineering';
+const siteDescription =
+  "Explore Prince Kumar's portfolio across strategy, product, engineering, analytical memos, systems design, and early-stage execution.";
+const previewImage = '/images/hero/hero-head.png';
+
+export const metadata: Metadata = {
+  title: {
+    absolute: siteTitle,
+  },
+  description: siteDescription,
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: '/',
+    siteName: 'Prince Kumar',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: previewImage,
+        width: 2880,
+        height: 1258,
+        alt: 'Prince Kumar portfolio preview',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteTitle,
+    description: siteDescription,
+    images: [previewImage],
+  },
+};
 
 export default function HomePage() {
   const insights = getAllInsightsMeta().slice(0, 8);

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Navbar from '@/components/layout/Navbar';
 import PageHero from '@/components/layout/PageHero';
 import Footer from '@/components/layout/Footer';
@@ -7,6 +8,39 @@ import PillTag from '@/components/ui/PillTag';
 import ContactCTA from '@/components/sections/ContactCTA';
 import styles from './page.module.css';
 import Divider from '@/components/ui/Divider';
+
+const pageTitle = 'About';
+const pageDescription =
+    "Learn about Prince Kumar's approach to structured thinking, product strategy, systems design, and turning ambiguity into actionable decisions.";
+const previewImage = '/images/contact/contact-portrait.png';
+
+export const metadata: Metadata = {
+    title: pageTitle,
+    description: pageDescription,
+    alternates: {
+        canonical: '/about',
+    },
+    openGraph: {
+        title: `${pageTitle} | Prince Kumar`,
+        description: pageDescription,
+        url: '/about',
+        siteName: 'Prince Kumar',
+        locale: 'en_US',
+        type: 'profile',
+        images: [
+            {
+                url: previewImage,
+                alt: 'Prince Kumar',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: `${pageTitle} | Prince Kumar`,
+        description: pageDescription,
+        images: [previewImage],
+    },
+};
 
 export default function AboutPage() {
     return (

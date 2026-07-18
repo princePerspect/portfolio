@@ -1,4 +1,30 @@
+import type { Metadata } from 'next';
 import styles from '../page.module.css';
+
+const pageTitle = 'Reflection Received';
+const pageDescription =
+    'Confirmation page for submitted reflections to Prince Kumar.';
+
+export const metadata: Metadata = {
+    title: pageTitle,
+    description: pageDescription,
+    alternates: {
+        canonical: '/write/success',
+    },
+    openGraph: {
+        title: `${pageTitle} | Prince Kumar`,
+        description: pageDescription,
+        url: '/write/success',
+        siteName: 'Prince Kumar',
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary',
+        title: `${pageTitle} | Prince Kumar`,
+        description: pageDescription,
+    },
+};
 
 export default function ReflectionSuccessPage() {
     return (

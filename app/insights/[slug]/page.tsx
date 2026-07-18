@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Surface from '@/components/layout/Surface';
@@ -14,6 +15,7 @@ import {
 import styles from './page.module.css';
 
 const siteUrl = 'https://princeperspect.in';
+const siteName = 'Prince Kumar';
 
 function absoluteUrl(path: string) {
     return new URL(path, siteUrl).toString();
@@ -27,6 +29,52 @@ function jsonLdScript(data: unknown) {
 
 export async function generateStaticParams() {
     return getAllInsightSlugs();
+}
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ slug?: string }>;
+}): Promise<Metadata> {
+    const { slug } = await params;
+
+    if (!slug) notFound();
+
+    const insight = await getInsightBySlug(slug);
+    const articlePath = `/insights/${insight.slug}`;
+    const articleTitle = insight.title;
+    const articleDescription = insight.excerpt;
+
+    return {
+        title: articleTitle,
+        description: articleDescription,
+        alternates: {
+            canonical: articlePath,
+        },
+        openGraph: {
+            title: articleTitle,
+            description: articleDescription,
+            url: articlePath,
+            siteName,
+            locale: 'en_US',
+            type: 'article',
+            publishedTime: insight.date,
+            modifiedTime: insight.date,
+            authors: [siteUrl],
+            images: [
+                {
+                    url: insight.hero,
+                    alt: insight.title,
+                },
+            ],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: articleTitle,
+            description: articleDescription,
+            images: [insight.hero],
+        },
+    };
 }
 
 /* ---------- PAGE ---------- */

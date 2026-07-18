@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Suspense } from 'react';
 
 import Navbar from '@/components/layout/Navbar';
@@ -7,6 +8,41 @@ import WriteReflectionForm from './WriteReflectionForm';
 import WriteReflectionFormStatic from './WriteReflectionFormStatic';
 
 import styles from './page.module.css';
+
+const pageTitle = 'Write a Reflection';
+const pageDescription =
+    'Share a private reflection or thoughtful feedback with Prince Kumar through a quiet, anonymous writing page.';
+const previewImage = '/images/hero/hero-head.png';
+
+export const metadata: Metadata = {
+    title: pageTitle,
+    description: pageDescription,
+    alternates: {
+        canonical: '/write',
+    },
+    openGraph: {
+        title: `${pageTitle} | Prince Kumar`,
+        description: pageDescription,
+        url: '/write',
+        siteName: 'Prince Kumar',
+        locale: 'en_US',
+        type: 'website',
+        images: [
+            {
+                url: previewImage,
+                width: 2880,
+                height: 1258,
+                alt: 'Prince Kumar portfolio preview',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: `${pageTitle} | Prince Kumar`,
+        description: pageDescription,
+        images: [previewImage],
+    },
+};
 
 export default function WritePage() {
     return (
