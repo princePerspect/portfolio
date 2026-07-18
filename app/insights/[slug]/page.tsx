@@ -13,6 +13,16 @@ import {
 
 import styles from './page.module.css';
 
+const siteUrl = 'https://princeperspect.in';
+
+function absoluteUrl(path: string) {
+    return new URL(path, siteUrl).toString();
+}
+
+function jsonLdScript(data: unknown) {
+    return JSON.stringify(data).replace(/</g, '\\u003c');
+}
+
 /* ---------- STATIC PARAMS ---------- */
 
 export async function generateStaticParams() {
@@ -36,8 +46,38 @@ export default async function InsightPage({
         (i) => i.slug !== slug
     );
 
+    const articleUrl = absoluteUrl(`/insights/${insight.slug}`);
+    const articleJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        '@id': `${articleUrl}#article`,
+        mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': articleUrl,
+        },
+        url: articleUrl,
+        headline: insight.title,
+        description: insight.excerpt,
+        image: [absoluteUrl(insight.hero)],
+        datePublished: insight.date,
+        dateModified: insight.date,
+        author: {
+            '@type': 'Person',
+            '@id': `${siteUrl}/#person`,
+            name: insight.author,
+            url: siteUrl,
+        },
+        articleSection: insight.category,
+        keywords: insight.category.join(', '),
+        inLanguage: 'en-US',
+    };
+
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: jsonLdScript(articleJsonLd) }}
+            />
             <Navbar />
 
             {/* HERO */}

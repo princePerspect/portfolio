@@ -21,6 +21,47 @@ const siteDescription =
   "Portfolio of Prince Kumar, showcasing strategy, product, and engineering work across market research, startup execution, systems thinking, and AI-enabled product building.";
 const previewImage = "/images/hero/hero-head.png";
 
+const personJsonLd = {
+  "@type": "Person",
+  "@id": `${siteUrl}/#person`,
+  name: "Prince Kumar",
+  url: siteUrl,
+  image: `${siteUrl}${previewImage}`,
+  jobTitle: "Strategy, Product & Engineering Practitioner",
+  description: siteDescription,
+  sameAs: ["https://www.linkedin.com/in/princeperspect"],
+  knowsAbout: [
+    "Strategy",
+    "Product management",
+    "Software engineering",
+    "Systems design",
+    "Market research",
+    "Startup execution",
+    "AI-enabled product building",
+  ],
+};
+
+const websiteJsonLd = {
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  url: siteUrl,
+  name: "Prince Kumar",
+  description: siteDescription,
+  inLanguage: "en-US",
+  author: {
+    "@id": `${siteUrl}/#person`,
+  },
+};
+
+const globalJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [personJsonLd, websiteJsonLd],
+};
+
+function jsonLdScript(data: unknown) {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -68,7 +109,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body>
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLdScript(globalJsonLd) }}
+        />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=G-B7LD6TJKNE`}
           strategy="afterInteractive"
