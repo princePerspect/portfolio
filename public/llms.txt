@@ -1,0 +1,29 @@
+# Prince Kumar
+
+Preferred canonical URL: https://princeperspect.in
+
+## Site Purpose
+
+This site is the professional portfolio of Prince Kumar. It presents his work across strategy, product thinking, engineering execution, market research, analytical writing, and AI-enabled product building.
+
+## Author
+
+Prince Kumar is a strategy, product, and engineering practitioner focused on turning ambiguous business and technology problems into structured analysis, product direction, and working systems.
+
+## Expertise
+
+- Strategy and market analysis
+- Product management and product thinking
+- Software engineering and systems design
+- Startup execution and operator workflows
+- AI-enabled tools, research, and automation
+- Hypothesis-led analytical memos
+
+## Important Sections
+
+- Home: https://princeperspect.in
+- About: https://princeperspect.in/about
+- Experience: https://princeperspect.in/experience
+- Recruiter context: https://princeperspect.in/for-recruiters
+- Insights: https://princeperspect.in/insights
+- Writing/contact form: https://princeperspect.in/write
