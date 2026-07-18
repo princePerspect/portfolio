@@ -15,9 +15,49 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+const siteUrl = "https://princeperspect.in";
+const siteTitle = "Prince Kumar | Strategy, Product & Engineering";
+const siteDescription =
+  "Portfolio of Prince Kumar, showcasing strategy, product, and engineering work across market research, startup execution, systems thinking, and AI-enabled product building.";
+const previewImage = "/images/hero/hero-head.png";
+
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Professional consulting-grade portfolio",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteTitle,
+    template: "%s | Prince Kumar",
+  },
+  description: siteDescription,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: "/",
+    siteName: "Prince Kumar",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: previewImage,
+        width: 2880,
+        height: 1258,
+        alt: "Prince Kumar portfolio preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: [previewImage],
+  },
+  icons: {
+    icon: "/images/logo/logo.png",
+    apple: "/images/logo/logo.png",
+  },
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({
