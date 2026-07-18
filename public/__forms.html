@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Netlify Forms Blueprints</title>
+  </head>
+  <body>
+    <!-- Blueprint for Contact Form -->
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <!-- Blueprint for Write Reflection Form -->
+    <form name="write-reflection" method="POST" action="/write/success" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="write-reflection" />
+      <input type="text" name="bot-field" />
+      <input type="text" name="message" />
+      <input type="text" name="name" />
+      <input type="text" name="role" />
+      <input type="text" name="organization" />
+    </form>
+  </body>
+</html>

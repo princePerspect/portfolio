@@ -5,9 +5,7 @@ export default function WriteReflectionFormStatic() {
         <form
             name="write-reflection"
             method="POST"
-            action="/write/success"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            action="/__forms.html"
             className={styles.form}
         >
             {/* Netlify uses the form name plus this hidden field to identify

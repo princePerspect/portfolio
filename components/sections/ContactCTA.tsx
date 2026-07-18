@@ -34,7 +34,7 @@ export default function ContactSection() {
         try {
             setSubmissionState("submitting");
 
-            const response = await fetch("/", {
+            const response = await fetch("/__forms.html", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
@@ -99,24 +99,7 @@ export default function ContactSection() {
             <div className={styles.card}>
                 {/* Left: form */}
                 <div className={styles.formWrapper}>
-                    <form
-                        name={CONTACT_FORM_NAME}
-                        method="POST"
-                        data-netlify="true"
-                        data-netlify-honeypot="bot-field"
-                        className={styles.netlifyBlueprint}
-                        aria-hidden="true"
-                    >
-                        <input
-                            type="hidden"
-                            name="form-name"
-                            value={CONTACT_FORM_NAME}
-                        />
-                        <input type="text" name="bot-field" />
-                        <input type="text" name="name" />
-                        <input type="email" name="email" />
-                        <textarea name="message" />
-                    </form>
+
 
                     <form
                         className={styles.form}
