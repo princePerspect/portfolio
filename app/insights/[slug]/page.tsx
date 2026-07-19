@@ -107,8 +107,8 @@ export default async function InsightPage({
         headline: insight.title,
         description: insight.excerpt,
         image: [absoluteUrl(insight.hero)],
-        datePublished: insight.date,
-        dateModified: insight.date,
+        datePublished: `${insight.date}T00:00:00+05:30`,
+        dateModified: `${insight.date}T00:00:00+05:30`,
         author: {
             '@type': 'Person',
             '@id': `${siteUrl}/#person`,
