@@ -120,15 +120,15 @@ Absent fundamental changes to market structure, pricing power, or user behavior,
 ## Sources & Further Reading
 
 Selected references used in this analysis:
-- Bain & Company — How India Shops Online 2025
-- HDFC Securities — Zomato & E-commerce Sector Reports
-- Anand Rathi — Indian Internet & Platform Economy Notes
+- Bain & Company - How India Shops Online 2025
+- HDFC Securities - Zomato & E-commerce Sector Reports
+- Anand Rathi - Indian Internet & Platform Economy Notes
 - Zomato FY25 Investor Presentations & Shareholder Letters
 - Swiggy Q2 FY26 Shareholder Updates
-- SSRN — Unit Economics-Driven Profitability Assessment (2025)
-- NITI Aayog — India’s Gig and Platform Economy
-- IDinsight — Delivery Platform Workforce Studies
-- Asia Foundation — Challenges in the Indian Gig Economy
-- Reuters / Economic Times — Competition and Pricing Coverage
+- SSRN - Unit Economics-Driven Profitability Assessment (2025)
+- NITI Aayog - India’s Gig and Platform Economy
+- IDinsight - Delivery Platform Workforce Studies
+- Asia Foundation - Challenges in the Indian Gig Economy
+- Reuters / Economic Times - Competition and Pricing Coverage
 
 ---

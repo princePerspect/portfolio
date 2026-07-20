@@ -123,12 +123,12 @@ Absent any one of these, the model weakens materially.
 ## Sources & Further Reading
 
 Selected references used in this analysis:
-- Zomato Ltd. — Q3 & Q4 FY25 Earnings Transcripts
-- Swiggy Ltd. — Q4 FY25 Shareholder Letter & Annual Report
-- McKinsey & Company — Profitable Online Grocery Fulfillment
-- Bain & Company — Quick Commerce Economics in Emerging Markets
-- RedSeer Consulting — India Quick Commerce Reports
-- Bloomberg — India’s Instant Shopping Boom
-- Inc42 — Zepto, Blinkit, Instamart deep dives  
+- Zomato Ltd. - Q3 & Q4 FY25 Earnings Transcripts
+- Swiggy Ltd. - Q4 FY25 Shareholder Letter & Annual Report
+- McKinsey & Company - Profitable Online Grocery Fulfillment
+- Bain & Company - Quick Commerce Economics in Emerging Markets
+- RedSeer Consulting - India Quick Commerce Reports
+- Bloomberg - India’s Instant Shopping Boom
+- Inc42 - Zepto, Blinkit, Instamart deep dives  
 
 ---

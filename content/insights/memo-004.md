@@ -92,11 +92,11 @@ Consumer internet success in India is structural, conditional, and time-dependen
 
 This memo draws on publicly available research and disclosures, including:
 
-- Bain & Company — How India Shops Online (2023–2025)
-- Kearney — The Rise of Quick Commerce in India
-- Redseer Consulting — Consumer Internet & B2B platform benchmarks
-- Bessemer Venture Partners — India marketplace and B2B model analyses
-- PwC — India Entertainment & Media Outlook
-- BCG — Scaling and hyperscaling frameworks
+- Bain & Company - How India Shops Online (2023–2025)
+- Kearney - The Rise of Quick Commerce in India
+- Redseer Consulting - Consumer Internet & B2B platform benchmarks
+- Bessemer Venture Partners - India marketplace and B2B model analyses
+- PwC - India Entertainment & Media Outlook
+- BCG - Scaling and hyperscaling frameworks
 - Platform annual reports and investor disclosures (FY2024–FY2026)
 - Industry coverage from Economic Times and Inc42

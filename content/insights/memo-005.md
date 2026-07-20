@@ -19,7 +19,7 @@ This note documents the methodology I use to construct **hypothesis-led analytic
 
 The objective is not to explain *what* to think about a specific industry or company, but **how to think when the problem statement is ambiguous and domain knowledge is incomplete**. The focus is on hypothesis formulation as a tool for structured learning, not as a mechanism for prediction or opinion.
 
-This piece is written for readers who are serious about analytical work—consulting, product strategy, investing, or research—and who want to understand the reasoning process that sits behind consulting-grade memos. It assumes comfort with structured thinking and does not attempt to simplify concepts for a general audience.
+This piece is written for readers who are serious about analytical work-consulting, product strategy, investing, or research-and who want to understand the reasoning process that sits behind consulting-grade memos. It assumes comfort with structured thinking and does not attempt to simplify concepts for a general audience.
 
 This note does **not** provide:
 - Ready-made industry frameworks  

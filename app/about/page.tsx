@@ -88,12 +88,12 @@ export default function AboutPage() {
                             </div>
 
                             <ul className={styles.timeline}>
-                                <li><strong>2023</strong> — Joined EDC (Entrepreneurship Development Cell)</li>
-                                <li><strong>2024</strong> — Outreach Lead, EDC</li>
-                                <li><strong>2024–2025</strong> — Startup events, conferences & hackathons across NCR</li>
-                                <li><strong>2024–2025</strong> — Internships & early-stage product/system projects</li>
-                                <li><strong>2025</strong> — Vice President, EDC</li>
-                                <li><strong>2026</strong> — Graduation (B.Tech, ECE - JSSATE Noida)</li>
+                                <li><strong>2023</strong> - Joined EDC (Entrepreneurship Development Cell)</li>
+                                <li><strong>2024</strong> - Outreach Lead, EDC</li>
+                                <li><strong>2024–2025</strong> - Startup events, conferences & hackathons across NCR</li>
+                                <li><strong>2024–2025</strong> - Internships & early-stage product/system projects</li>
+                                <li><strong>2025</strong> - Vice President, EDC</li>
+                                <li><strong>2026</strong> - Graduation (B.Tech, ECE - JSSATE Noida)</li>
                             </ul>
 
                             <div className={styles.centerCta}>

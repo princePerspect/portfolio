@@ -91,11 +91,11 @@ The challenge facing Indian consumer internet businesses is not an absence of sc
 
 The analysis draws on public disclosures, consulting research, and analyst commentary, including:
 
-- Bain & Company — How India Shops Online (2023–2025)
-- Redseer Consulting — Consumer Internet & Quick Commerce benchmarks
-- BCG — The Emergence of Rapid Commerce in India
-- EY — India Consumer Internet sector reports
-- ICRA — Corporate and platform economics reviews
-- Economic Times — Platform economics and industry coverage
+- Bain & Company - How India Shops Online (2023–2025)
+- Redseer Consulting - Consumer Internet & Quick Commerce benchmarks
+- BCG - The Emergence of Rapid Commerce in India
+- EY - India Consumer Internet sector reports
+- ICRA - Corporate and platform economics reviews
+- Economic Times - Platform economics and industry coverage
 - Platform earnings disclosures and investor presentations (2024–2026)
 

@@ -51,7 +51,7 @@ export default function ExperiencePage() {
             <PageHero
                 eyebrow=""
                 title="Experience That Builds Clarity"
-                subtitle="Markets, products, systems, and early-stage operations — where I learned to turn ambiguity into structure."
+                subtitle="Markets, products, systems, and early-stage operations - where I learned to turn ambiguity into structure."
             />
 
             {/* HERO → CONTENT BRIDGE MARK */}

@@ -246,10 +246,10 @@ export const experienceItems = [
 ];
 
 export const certifications = [
-    'Product Management Specialization — Coursera',
-    'Data Analysis with Python — IBM',
-    'SQL for Data Science — University of California',
-    'Advanced Excel Modeling — Udemy',
+    'Product Management Specialization - Coursera',
+    'Data Analysis with Python - IBM',
+    'SQL for Data Science - University of California',
+    'Advanced Excel Modeling - Udemy',
 ];
 
 export const skills = [

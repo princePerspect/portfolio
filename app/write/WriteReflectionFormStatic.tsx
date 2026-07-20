@@ -50,7 +50,7 @@ export default function WriteReflectionFormStatic() {
                         type="text"
                         name="name"
                         className={styles.input}
-                        placeholder="Optional — helps me contextualize your perspective"
+                        placeholder="Optional - helps me contextualize your perspective"
                     />
                 </div>
 

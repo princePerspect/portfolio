@@ -55,12 +55,12 @@ export const metadata: Metadata = {
 
 export default function ForRecruitersPage() {
     const whatIBring = [
-        'Structured thinking — breaking down messy problems into clear, solvable parts.',
-        'Multi-perspective analysis — user, market, business, and technical lenses.',
-        'System & workflow design — designing clean workflows and operational logic.',
-        'Reliable ownership — accountable from problem definition to delivery.',
-        'Clarity in decision-making — grounding choices in data, constraints, and logic.',
-        'Founder-style execution — fast iterations, low friction, strong follow-through.',
+        'Structured thinking - breaking down messy problems into clear, solvable parts.',
+        'Multi-perspective analysis - user, market, business, and technical lenses.',
+        'System & workflow design - designing clean workflows and operational logic.',
+        'Reliable ownership - accountable from problem definition to delivery.',
+        'Clarity in decision-making - grounding choices in data, constraints, and logic.',
+        'Founder-style execution - fast iterations, low friction, strong follow-through.',
     ];
 
     const whereIAddValue = [

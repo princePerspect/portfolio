@@ -87,7 +87,7 @@ function EndorsementCard({
 export default function Endorsements({ items }: EndorsementsProps) {
     const [activeItem, setActiveItem] = useState<Endorsement | null>(null);
 
-    /* ESC KEY CLOSE — SAFE & ISOLATED */
+    /* ESC KEY CLOSE - SAFE & ISOLATED */
     useEffect(() => {
         if (!activeItem) return;
 
