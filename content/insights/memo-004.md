@@ -19,7 +19,6 @@ hero: "/images/articles/memo-004/consumer-internet-models-hero.png"
 
 **Rather than evaluating individual companies, the memo identifies recurring economic patterns across categories. Four hypotheses are formulated to explain when consumer internet models succeed in India, drawing on consulting benchmarks, analyst commentary, platform disclosures, and academic research.**
 
----
 
 ## Executive Summary
 
@@ -34,7 +33,6 @@ Consumer internet models in India tend to work when four structural conditions a
 
 Absent these conditions, scale alone is unlikely to produce durable profitability.
 
----
 
 ## H1: High-frequency, necessity-driven usage enables viable unit economics
 
@@ -44,7 +42,6 @@ Evidence indicates that consumer internet models in India with high-frequency, n
 
 ![Indicative Usage Frequency and CAC Payback Across Consumer Internet Model](/images/articles/memo-004/consumer-internet-models-chart-1.png)
 
----
 
 ## H2: Supply-side control enables more predictable unit economics
 
@@ -54,7 +51,6 @@ Evidence suggests that consumer internet models in India with greater supply-sid
 
 ![Indicative Relationship Between Supply Control and Unit Economics Stability in India](/images/articles/memo-004/consumer-internet-models-chart-2.png)
 
----
 
 ## H3: Embedded monetization enables profitability despite thin core margins
 
@@ -64,7 +60,6 @@ Evidence indicates that consumer internet models in India achieve profitability 
 
 ![Indicative Revenue Mix Evolution with Embedded Monetization in Indian Consumer Internet](/images/articles/memo-004/consumer-internet-models-chart-3.png)
 
----
 
 ## H4: Capital patience and ecosystem leverage are required for advantages to compound
 
@@ -74,19 +69,16 @@ Evidence indicates that even structurally sound consumer internet models in Indi
 
 ![Indicative Relationship Between Capital Support and Time To Profitability in Indian Consumer](/images/articles/memo-004/consumer-internet-models-chart-4.png)
 
----
 
 ## Synthesis: When consumer internet models actually work in India
 
 Taken together, the four hypotheses form a coherent success framework. Consumer internet models in India tend to succeed not by maximizing growth speed, but by aligning demand frequency, supply stability, monetization design, and capital timelines. Scale becomes valuable only after volatility is reduced, CAC is amortized, and value capture shifts beyond the core transaction. Models that lack one or more of these conditions often struggle despite achieving impressive topline growth.
 
----
 
 ## Final Takeaways
 
 Consumer internet success in India is structural, conditional, and time-dependent. Scale alone is insufficient. Durable profitability emerges when high-frequency demand, supply-side control, embedded monetization, and capital patience reinforce one another. Understanding these conditions enables clearer judgment about which models are likely to endure-and which are likely to break before economics stabilize.
 
----
 
 ## Sources & Further Reading
 

@@ -18,7 +18,6 @@ This memo analyzes why many Indian consumer internet businesses fail to translat
 
 Starting from the observed outcome-persistent losses despite scale-the memo formulates four structural hypotheses. Each hypothesis is evaluated using publicly available disclosures, consulting benchmarks, analyst commentary, and sector research. The goal is not to assess individual company execution, but to understand the underlying economic constraints shaping outcomes across categories.
 
----
 
 ## Executive Summary
 
@@ -33,7 +32,6 @@ This memo finds that the challenge is structural rather than **cyclical or execu
 
 Together, these forces explain why scale improves topline metrics but fails to unlock sustained profitability across much of India’s consumer internet ecosystem.
 
----
 
 ## H1: Customer acquisition costs do not decline meaningfully with scale
 
@@ -43,7 +41,6 @@ Evidence suggests that customer acquisition costs (CAC) in Indian consumer inter
 
 ![Indicative CAC Trend Across Scale in ICI](/images/articles/memo-003/consumer-internet-startups-chart-1.png)
 
----
 
 ## H2: Fulfillment and variable service costs remain structurally elevated despite scale
 
@@ -53,7 +50,6 @@ Evidence indicates that fulfillment and variable service costs in Indian consume
 
 ![Indicative Fulfillment Cost Trends Across Scale in ICI](/images/articles/memo-003/consumer-internet-startups-chart-2.png)
 
----
 
 ## H3: Limited pricing power constrains margin expansion at scale
 
@@ -63,7 +59,6 @@ Evidence indicates that Indian consumer internet platforms face structurally lim
 
 ![Indicative Take-Rate Trends Across Scale in ICI](/images/articles/memo-003/consumer-internet-startups-chart-3.png)
 
----
 
 ## H4: Operating complexity offsets fixed-cost leverage at scale
 
@@ -73,19 +68,16 @@ Evidence indicates that operating complexity in Indian consumer internet busines
 
 ![Indicative Overhead Cost Intensity Across Scale in ICI](/images/articles/memo-003/consumer-internet-startups-chart-4.png)
 
----
 
 ## Synthesis: Why scale improves optics but not economics
 
 Taken together, the four hypotheses explain a consistent pattern across Indian consumer internet platforms. Scale does deliver volume growth, but it does not reliably unlock economic self-reinforcement. Acquisition costs remain high, variable costs do not compress, pricing power is constrained, and overhead complexity rises with expansion. Rather than compounding, scale exposes structural frictions that delay or neutralize operating leverage. Profitability, where it appears, is often driven by ancillary revenues or model pivots rather than core unit-level improvement.
 
----
 
 ## Final Takeaways
 
 The challenge facing Indian consumer internet businesses is not an absence of scale, ambition, or execution capability. It is a structural mismatch between the economics required for digital platform profitability and the realities of India’s competitive, price-sensitive, and operationally complex markets. Until these structural constraints ease-or business models adapt to work around them-scale alone is unlikely to be sufficient for sustained profitability.
 
----
 
 ## Sources & Further Reading
 

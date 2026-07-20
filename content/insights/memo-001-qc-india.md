@@ -16,7 +16,6 @@ hero: "/images/articles/memo-001/qc-india-hero.png"
 
 *This memo examines why quick commerce has scaled in India, using a hypothesis-led analysis across market structure, demand behavior, fulfillment design, and ecosystem leverage.*
 
----
 
 ## Executive Summary
 
@@ -30,7 +29,6 @@ This memo examines four hypotheses to explain why quick commerce has scaled in I
 
 Taken together, these factors explain not only where and why quick commerce works today-but also why it survived long enough to reach its current scale.
 
----
 
 ## H1: Urban Density Enables Viable Unit Economics
 
@@ -98,7 +96,6 @@ Standalone models face higher pressure to prove profitability earlier, increasin
 
 ![Ecosystem Leverage Map](/images/articles/memo-001/qc-india-chart-4.png)
 
----
 
 ## Synthesis: When Does Quick Commerce Work?
 
@@ -110,7 +107,6 @@ Quick commerce works in India **conditionally, not universally**.
 - Platforms have ecosystem backing and capital patience
 Absent any one of these, the model weakens materially.
 
----
 
 ## Final Takeaways
 
@@ -118,7 +114,6 @@ Absent any one of these, the model weakens materially.
 - Structural alignment matters more than execution quality alone.
 - Ecosystem backing materially alters the survivability of new commerce models.
 
----
 
 ## Sources & Further Reading
 
@@ -131,4 +126,3 @@ Selected references used in this analysis:
 - Bloomberg - India’s Instant Shopping Boom
 - Inc42 - Zepto, Blinkit, Instamart deep dives  
 
----

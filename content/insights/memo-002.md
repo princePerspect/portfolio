@@ -18,7 +18,6 @@ hero: "/images/articles/memo-002/Indian-Marketplaces-hero.png"
 
 *Through four sequential hypotheses, the analysis dissects supply-side stability, demand behavior, unit economics at scale, and strategic optionality. The findings suggest that platform fragility is systemic rather than transitional, with compounding frictions across supply, demand, and competition preventing normalization even at scale.*
 
----
 
 ## Executive Summary
 
@@ -34,7 +33,6 @@ Platforms remain capital-dependent, with adjacencies failing to provide a credib
 
 Taken together, these dynamics trap platforms in a high-burn equilibrium, where growth increases capital requirements rather than reducing them. The issue is not execution quality or temporary competition, but a market structure that resists self-stabilization.
 
----
 
 ## H1: Supply-Side Participation Is Structurally Fragile
 
@@ -95,7 +93,6 @@ Collectively, these dynamics confirm that capital raises are **necessary rather 
 ![Sourse of Value Creation vs Observed Reality](/images/articles/memo-002/Indian-Marketplaces-chart-4.1.png)
 ![Capital Dependency & Strategic Optionality](/images/articles/memo-002/Indian-Marketplaces-chart-4.2.png)
 
----
 
 ## Synthesis: A System That Resists Self-Stabilization
 
@@ -103,7 +100,6 @@ Across all four hypotheses, a consistent pattern emerges: Indian marketplaces **
 
 These forces reinforce one another. Promo-driven demand accelerates supply churn, which increases subsidy requirements, which in turn prevents margin expansion and forces further capital infusion. The result is not a temporary phase, but a structurally stable equilibrium-one that sustains growth but resists profitability.
 
----
 
 ## Final Takeaways
 
@@ -115,7 +111,6 @@ These forces reinforce one another. Promo-driven demand accelerates supply churn
 
 Absent fundamental changes to market structure, pricing power, or user behavior, Indian digital marketplaces are likely to remain **growth-driven but capital-intensive**.
 
----
 
 ## Sources & Further Reading
 
@@ -131,4 +126,3 @@ Selected references used in this analysis:
 - Asia Foundation - Challenges in the Indian Gig Economy
 - Reuters / Economic Times - Competition and Pricing Coverage
 
----

@@ -31,7 +31,6 @@ Instead, it lays out a **repeatable mental process** for turning unclear problem
 
 The methodology outlined here has been **developed and refined through repeated application in hypothesis-led analytical memos**, several of which are published elsewhere in this portfolio.
 
----
 
 ## First Principle: What Hypotheses Actually Are
 
@@ -53,7 +52,6 @@ Hypotheses function less like opinions and more like **experiments**. They are p
 
 Early hypotheses are not meant to be precise. They are meant to be **directionally correct enough to guide investigation**. The analyst’s job is not to be right upfront, but to propose structure early and revise aggressively as evidence accumulates.
 
----
 
 ## The Single Biggest Beginner Mistake
 
@@ -75,7 +73,6 @@ The consultant mindset asks instead:
 
 An imperfect hypothesis that can be tested is more useful than a vague understanding that cannot be operationalized.
 
----
 
 ## Start From the Outcome, Not the Domain
 
@@ -97,7 +94,6 @@ Starting from the outcome leads to sharper questions:
 
 Outcome-first thinking anchors analysis and prevents unfocused exploration.
 
----
 
 ## Decompose the System, Not the Company
 
@@ -115,7 +111,6 @@ This decomposition works even when domain knowledge is shallow. It keeps hypothe
 
 ![Generic Business System Decomposition](/images/articles/memo-005/section-5.png)
 
----
 
 ## The “What Must Be True?” Question
 
@@ -134,7 +129,6 @@ Each inversion becomes a candidate hypothesis.
 
 This approach ensures coverage without relying on intuition.
 
----
 
 ## From Conditions to Hypotheses
 
@@ -150,7 +144,6 @@ For example:
 
 Hypotheses must be **structural**, not moral or emotional.
 
----
 
 ## Testability Is Non-Negotiable
 
@@ -164,7 +157,6 @@ If not, the hypothesis fails.
 
 Testability forces precision, prevents narrative drift, and anchors analysis in evidence.
 
----
 
 ## Coverage Over Perfection (MECE, Properly Understood)
 
@@ -176,7 +168,6 @@ MECE emerges through testing, not before it. Over-optimizing for MECE too early 
 
 Clarity is the output of analysis, not its input.
 
----
 
 ## Choosing Hypotheses That Matter
 
@@ -193,7 +184,6 @@ A useful test is:
 
 If not, it does not belong.
 
----
 
 ## The 3–5 Hypothesis Constraint
 
@@ -205,7 +195,6 @@ Many hypotheses may be explored initially. Discipline lies in what survives into
 
 Clarity is achieved by **saying only what must be true**.
 
----
 
 ## The Hypothesis Generation Procedure
 
@@ -223,7 +212,6 @@ This guarantees fast convergence from ambiguity to structure.
 
 ![Hypothesis Generation Procedure](/images/articles/memo-005/section-12.png)
 
----
 
 ## Application Note
 
@@ -233,7 +221,6 @@ In each case, hypotheses determined what needed to be learned and in what order.
 
 The approach is deliberately domain-agnostic and repeatable.
 
----
 
 ## What This Methodology Enables
 
