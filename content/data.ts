@@ -117,9 +117,21 @@ export const endorsements = [
 export const experienceItems = [
     {
         type: 'standard' as const,
+        company: 'The Third Orbit',
+        role: 'Founder | Noida, India (Remote)',
+        timeline: 'Jul 2026 – Present',
+        logo: '/images/experience/the-third-orbit.png',
+        bullets: [
+            'Formalized informal advisory work previously delivered to individual founders and legacy businesses into a structured, twosegment practice, defining service lines and target-segment logic to extend reach beyond personal network.',
+            'Converted 3 of 7 engaged prospects to paid clients across branding, marketing, and sales-funnel engagements within the first two weeks, prioritizing international clients for their higher value orientation over cost sensitivity.',
+        ],
+    },
+
+    {
+        type: 'standard' as const,
         company: 'Shyphan',
         role: 'Product & Systems Analyst',
-        timeline: 'Dec 2025 – Present',
+        timeline: 'Dec 2025 – June 2026',
         logo: '/images/experience/shyphan.png',
         bullets: [
             'Conduct customer discovery across SMB clients to identify unmet needs, workflow gaps, and product opportunities.',
